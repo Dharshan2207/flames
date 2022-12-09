@@ -1,0 +1,226 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(255deg, #e91e63, #03a9f4);
+    mix-blend-mode: screen;
+}
+
+section .flamesBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+section .flamesBx .form{
+    width: 60%;
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+section .flamesBx .form h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: solid 4px #ff4584;
+}
+
+section .flamesBx .form .inputBx{
+    margin-bottom: 20px;
+}
+
+section .flamesBx .form .inputBx input:hover{
+    background-color: rgba(234, 230, 230, 0.836);
+}
+
+section .flamesBx .form .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #607d8b;
+}
+
+section .flamesBx .form .inputBx input,button{
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    border: 1px solid #607d8b;
+    border-radius: 30px;
+    color: #607d8b;
+    background: transparent;
+    outline: none;
+    padding: 10px 20px;
+}
+
+section .flamesBx .form .inputBx button{
+    background-color: #ff4584;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section .flamesBx .form .inputBx button:hover{
+    background: black;
+    color: red;
+    text-shadow: 1px 1px 80px  red;
+    box-shadow: .5px .5px 5px  black;
+    font-weight: 550;
+    font-size: 16.5x;
+}
+
+section .flamesBx h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: 500;
+}
+
+section .flamesBx .sc{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section .flamesBx .form .sc li{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(202, 199, 199, 0.377);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section .flamesBx .form .sc li:hover{
+    background: #ff4584;
+}
+
+
+
+@media (max-width:968px){
+    section .flamesBx .form{
+        width: 70%;
+        padding: 20px 30px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+@media (max-width:768px) {
+    section .imgBx{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    section .flamesBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    section .flamesBx .form{
+        background: rgba(255, 255, 255, 0.799);
+        padding: 40px;
+        margin: 50px;
+        width: 65%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+@media (max-width:568px) {
+    section .imgBx{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    section .flamesBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    section .flamesBx .form{
+        width: 85%;
+        height: 90%;
+        background: rgba(255, 255, 255, 0.799);
+        padding: 40px;
+        margin: 50px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+@media (max-width:300px) {
+    section .imgBx{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    section .flamesBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    section .flamesBx .form{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.799);
+        padding: 40px;
+        margin: 50px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
