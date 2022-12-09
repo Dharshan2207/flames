@@ -237,3 +237,15 @@ section .flamesBx .form .sc li:hover{
         overflow: hidden;
     }
 }
+@media (max-width:300px) {
+    section .flamesBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 95%;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+    }
+}
